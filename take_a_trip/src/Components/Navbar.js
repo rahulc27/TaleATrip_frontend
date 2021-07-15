@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../index.css";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Home from "./Home";
+import Login from "./Login";
 
 class Navbar extends Component{
     constructor(props) {
@@ -87,6 +89,11 @@ class Navbar extends Component{
                             </div>
                         </div>
                     </nav>
+
+                    <Switch>
+                        <Route exact path="/" component={Home}></Route>
+                        <Route exact path="/login" component= {Login}></Route>
+                    </Switch>
                 </Router>
             </div>
         );
