@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Home from "./Home";
 import Login from "./Login";
+import Register from "./Register";
 
 class Navbar extends Component{
     constructor(props) {
@@ -93,6 +94,7 @@ class Navbar extends Component{
                     <Switch>
                         <Route exact path="/" component={Home}></Route>
                         <Route exact path="/login" component= {Login}></Route>
+                        <Route exact path="/register" component={Register}></Route>
                     </Switch>
                 </Router>
             </div>
