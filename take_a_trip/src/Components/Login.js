@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
+import {Message} from 'primereact/message';
 import "../custom.css";
 
 class Login extends Component{
@@ -15,8 +16,18 @@ class Login extends Component{
                             <div class="card-header"><strong>Login to your account</strong></div>
                             <div class="card-body">
                                 <form>
-                                    <div class="form-group"><label class="text-muted" for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/> <small id="emailHelp" class="form-text text-muted">We don't share email with anyone</small></div>
-                                    <div class="form-group"><label class="text-muted" for="exampleInputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/> <small id="passwordHelp" class="form-text text-muted">your password is saved in encrypted form</small></div>
+                                    <div class="form-group">
+                                        <label class="text-muted" for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                                        <Message severity = "error" text = "required field" style = {{"color" : "red"}}></Message>
+                                    </div>
+                                    <br/>
+                                    <div class="form-group">
+                                        <label class="text-muted" for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                                    </div>
+                                    <br/>
+                                    <br/>
                                     
                                     <button type="submit" class="btn btn-primary">Sign in</button>
                                 </form>
