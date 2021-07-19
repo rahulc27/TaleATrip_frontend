@@ -7,6 +7,7 @@ import Home from "./Home";
 import Login from "./Login";
 import Register from "./Register";
 import SearchPackages from "./SearcPackages";
+import Hotdeals from "./Hotdeals";
 
 class Navbar extends Component{
     constructor(props) {
@@ -96,7 +97,9 @@ class Navbar extends Component{
                         <Route exact path="/" component={Home}></Route>
                         <Route exact path="/login" component= {Login}></Route>
                         <Route exact path="/register" component={Register}></Route>
+                        
                         <Route exact path="/packages/:continent" component={SearchPackages}></Route>
+                        <Route exact path="/packages" component = {Hotdeals}></Route>
                     </Switch>
                 </Router>
             </div>
