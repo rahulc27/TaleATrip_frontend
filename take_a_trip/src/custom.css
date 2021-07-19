@@ -98,3 +98,12 @@ body {
 .was-validated .form-check-input:invalid~.form-check-label {
     color: #f54394
 }
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.package-image{
+    width:300px;
+    height:200px;
+  }
