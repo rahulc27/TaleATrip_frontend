@@ -113,7 +113,7 @@ class Login extends Component{
 
     render(){
         return(
-<div id="content" class="flex" style = {{"textAlign":"center"}}>
+<div id="content" class="flex" style = {{"textAlign":"center" , "marginTop" : -125}}>
 
 
     <div class="">
