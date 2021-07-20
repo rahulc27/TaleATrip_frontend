@@ -49,10 +49,10 @@ class CreateCard extends Component{
             var highlights = item.detailsDTO.highlights.split(",");
 
             if(item.availability <= 0){
-                var discount = <h5 class="badge badge-pill badge-danger">Not Available at a Moment.</h5>
+                var discount = <h5 class="badge badge-pill badge-danger" style = {{backgroundColor:"red"}}>Not Available at a Moment.</h5>
             }
             else{
-                var discount = <h5 class="badge badge-pill badge-primary" style = {{backgroundColor : "#2e7eff"}}>Instant Discount: {item.discount}</h5>
+                var discount = <h5 class="badge badge-pill badge-primary" style = {{backgroundColor : "#FFFF5C", color:"black"}}>Instant Discount: {item.discount}</h5>
             }
 
             return(
@@ -63,12 +63,12 @@ class CreateCard extends Component{
                                 <div class="card">
                                     <div class="card-horizontal">
                                         <div class="img-square-wrapper">
-                                            <img class="package-image" src={item.imageUrl} alt="Card image cap"/>
+                                            <img class="package-image" src={item.imageUrl} style= {{margin : 10, border:1}} alt="Card image cap"/>
                                         </div>
                                         <div class="card-body">
                                             <h4 class="card-title">{item.destinationName}</h4>
                                             <p class="card-text text-justify">{item.detailsDTO.about}</p>
-                                            <h4 className = "font-weight-bold text-primary">${item.chargePerPerson}</h4>
+                                            <h4 className = "font-weight-bold text-primary">${item.chargePerPerson}/-</h4>
                                             <h5>{discount}</h5>
                                             <button type = "button" className = "btn btn-primary float-right" onClick = {() => this.addDataModal()}>View Details</button>
                                             <button type = "button" className = "btn btn-success float-right" style={{marginLeft: 10}} disabled= {this.state.buttonActive} onClick = {this.handleBooking}>Book</button>

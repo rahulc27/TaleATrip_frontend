@@ -3,7 +3,10 @@
 }
 
 body {
-    background-color: #f8fafe
+    background-color: #f8fafe;
+    background-image: url('https://i.imgur.com/ZaRYfYW.jpg');
+    height: 100%;
+
 }
 
 .domain-form .form-group {
@@ -107,3 +110,11 @@ body {
     width:300px;
     height:200px;
   }
+
+  #HomeSearch {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://i.imgur.com/ZaRYfYW.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

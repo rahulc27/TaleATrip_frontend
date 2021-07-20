@@ -44,7 +44,7 @@ class Hotdeals extends Component{
         var packages = this.state.packages;
         if(packages.length > 0){
             return(
-                <div className = "masrhead book-page">
+                <div className = "masrhead book-page" id = "HomeSearch">
                     {
                         packages.map(item => (
                             <CreateCard key = {item.destinationId} package = {item}></CreateCard>

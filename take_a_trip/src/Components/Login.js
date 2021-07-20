@@ -111,7 +111,11 @@ class Login extends Component{
     }
 
     render(){
+
+        
+
         return(
+
 <div id="content" class="flex" style = {{"textAlign":"center" , "marginTop" : -125}}>
 
 
@@ -126,7 +130,7 @@ class Login extends Component{
                                 <form>
                                     <div class="form-group">
                                         <label class="text-muted" for="contactNumber">Mobile Number</label>
-                                        <input type="text" class="form-control" id="contactNumber" name = "contactNumber" placeholder="Enter email"  onChange = {this.handlechange}/>
+                                        <input type="text" class="form-control" id="contactNumber" name = "contactNumber" placeholder="Enter Mobile Number"  onChange = {this.handlechange}/>
                                         <Message severity = "error" text = {this.state.formErrorMessage.contactNumber} style = {{"color" : "red"}}></Message>
                                     </div>
                                     <br/>

@@ -8,6 +8,7 @@ import Login from "./Login";
 import Register from "./Register";
 import SearchPackages from "./SearcPackages";
 import Hotdeals from "./Hotdeals";
+import Booking from "./Booking";
 
 class Navbar extends Component{
     constructor(props) {
@@ -43,7 +44,7 @@ class Navbar extends Component{
             <div>
                 <Router>
 
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
                         <div className = "navbar-header">
                                 <Link className="navbar-brand" to="/">
                                     Start Exploring
@@ -100,6 +101,7 @@ class Navbar extends Component{
                         
                         <Route exact path="/packages/:continent" component={SearchPackages}></Route>
                         <Route exact path="/packages" component = {Hotdeals}></Route>
+                        <Route exact path = "/booking" render = {(props) => <Booking {...props}/>}></Route>
                     </Switch>
                 </Router>
             </div>

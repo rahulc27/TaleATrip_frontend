@@ -38,7 +38,7 @@ class Home extends Component{
         }
         return(
             
-            <div class="row justify-content-center padding">
+            <div class="row justify-content-center padding masrhead book-page">
                 <div class="col-md-8 ftco-animate fadeInUp ftco-animated">
                     <form action="#" class="domain-form">
                         <div class="form-group d-md-flex"> 
@@ -49,6 +49,7 @@ class Home extends Component{
                     
                 </div>
             </div>
+           
             
         );
     }
