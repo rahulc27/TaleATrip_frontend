@@ -9,6 +9,7 @@ import Register from "./Register";
 import SearchPackages from "./SearcPackages";
 import Hotdeals from "./Hotdeals";
 import Booking from "./Booking";
+import ViewBookings from "./ViewBooking";
 
 class Navbar extends Component{
     constructor(props) {
@@ -102,6 +103,7 @@ class Navbar extends Component{
                         <Route exact path="/packages/:continent" component={SearchPackages}></Route>
                         <Route exact path="/packages" component = {Hotdeals}></Route>
                         <Route exact path = "/booking" render = {(props) => <Booking {...props}/>}></Route>
+                        <Route exact path = "/viewBookings" component = {ViewBookings}></Route>
                     </Switch>
                 </Router>
             </div>
